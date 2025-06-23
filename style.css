@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #fff;
+  background-color: #FEFFB0;
 }
 
 header {
@@ -62,7 +62,7 @@ p{
 nav {
   display: flex;
   justify-content: center;
-  background-color: #faddaf;
+  background-color: #92FFA6;
   border-top: 1px solid #5a3d00;
   border-bottom: 1px solid #5a3d00;
 }
@@ -70,16 +70,16 @@ nav {
 nav button {
   padding: 15px 25px;
   font-weight: bold;
-  color: #a94400;
-  background: #fcecd4;
-  border: 1px solid #a94400;
+  color: #2E7A43;
+  background: #ADFFA4;
+  border: 1px solid #348C44;
   font-size: 16px;
   cursor: pointer;
 }
 
 nav button:hover {
-  background-color: #a94400;
-  color: #fcecd4;
+  background-color: #348C44;
+  color: #fff;
 }
 
 #content {
@@ -126,11 +126,11 @@ nav button:hover {
 }
 
 footer {
-  background-color: #fcecd4;
+  background-color: #ADFFA4;
   border-top: 1px solid #5a3d00;
   padding: 20px;
   font-size: 14px;
-  color:#a94400;
+  color:#2E7A43;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -146,4 +146,46 @@ footer .bottom {
   text-align: center;
   font-size: 12px;
   margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .side-img {
+    display: none;
+  }
+
+  .circle {
+    width: 70px;
+    height: 70px;
+    top: 100px;
+  }
+
+  h1 {
+    font-size: 50px;
+    top: 190px;
+  }
+
+  .image-section img {
+    width: 80px;
+    height: 80px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+  }
+
+  nav button {
+    margin: 5px;
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  .review-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .review-img {
+    width: 60px;
+    height: 60px;
+  }
 }

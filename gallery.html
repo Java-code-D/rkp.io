@@ -9,31 +9,35 @@
     .gallery-nav {
       display: flex;
       justify-content: right;
-      background-color: #fcecd4;
-      border-top: 1px solid #5a3d00;
-      border-bottom: 1px solid #5a3d00;
+      background-color: #ADFFA4;
+      border-top: 1px solid #2E7A43;
+      border-bottom: 1px solid #2E7A43;
     }
 
     .gallery-nav button {
       padding: 15px 25px;
       font-weight: bold;
-      color: #a94400;
-      background: #fcecd4;
-      border: 1px solid #a94400;
+      color: #2E7A43;
+      background: #ADFFA4;
+      border: 1px solid #2E7A43;
       font-size: 16px;
       cursor: pointer;
     }
     .gallery-nav button:hover {
-       background-color: #faddaf;
-       color: #fcecd4;
+       background-color: #2E7A43;
+       color: #fff;
     }
 
     .gallery-nav a {
       font-weight: bold;
-      color: #a94400;
+      color: #2E7A43;
       text-decoration: none;
       font-size: 16px;
     }
+    .gallery-nav a:hover{
+    color:#fff;
+    }
+
     .gallery-container {
       display: flex;
       padding: 30px;
@@ -46,16 +50,16 @@
       display: block;
       margin-bottom: 15px;
       padding: 10px;
-      width: 100%;
+      width: 120px;
       font-weight: bold;
-      background-color: #fcecd4;
-      color: #a94400;
-      border: 1px solid #a94400;
+      background-color: #ADFFA4;
+      color: #2E7A43;
+      border: 1px solid #2E7A43;
       cursor: pointer;
     }
     .nav-button:hover {
-       background-color: #a94400;
-       color: #fcecd4;
+       background-color: #2E7A43;
+       color: #fff;
      }
 
     .container {
@@ -66,7 +70,7 @@
     }
 
     .sidebar {
-      width: 250px;
+      width: 500px;
       background-color: #fff8ec;
       padding: 11px;
     }
@@ -96,7 +100,7 @@
 
     .slider img {
       width: 100%;
-      max-height: 50%;
+      max-height: 30%;
       object-fit: cover;
       border-radius: 6px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.2);
@@ -106,9 +110,9 @@
 </head>
 <script>
 const imageSets = {
-  room: ["images/room1.png", "images/room2.png", "images/room3.png"],
-  bathroom: ["images/bathroom1.png", "images/bathroom2.png", "images/bathroom3.png"],
-  reception: ["images/recep.png", "images/recep1.png"]
+  room: ["images/room1.JPG", "images/room2.JPG", "images/room3.JPG","images/room4.JPG","images/room5.JPG","images/room6.JPG","images/room7.JPG","images/room8.JPG","images/room9.JPG","images/room10.JPG"],
+  bathroom: ["images/bathroom0.JPG", "images/bathroom1.JPG", "images/bathroom3.png","images/bathroom4.JPG"],
+  reception: ["images/recep.png", "images/recep0.JPG","images/recep1.JPG","images/recep2.JPG","images/recep3.JPG"]
 };
 
 function showSlider(type) {
@@ -147,7 +151,7 @@ window.onload = () => showSlider('room');
   <!-- Left Sidebar -->
   <div class="sidebar">
     <div class="image-block">
-      <img src="room.jpg" alt="Room">
+      <img src="room2.JPG" alt="Room">
       <button class="nav-button" onclick="showSlider('room')">Rooms</button>
     </div>
     <div class="image-block">
@@ -155,7 +159,7 @@ window.onload = () => showSlider('room');
       <button class="nav-button" onclick="showSlider('bathroom')">Bathrooms</button>
     </div>
     <div class="image-block">
-      <img src="images/recep1.png" alt="Reception">
+      <img src="images/recep1.JPG" alt="Reception">
       <button class="nav-button" onclick="showSlider('reception')">Reception</button>
     </div>
   </div>

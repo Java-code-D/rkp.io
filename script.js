@@ -10,7 +10,7 @@
 function loadContent(section) {
   const content = document.getElementById("content");
   if (section === "offerings") {
-    content.innerHTML = "<h2>Our Offerings</h2><p>Content will be added here by admin.</p>";
+    content.innerHTML = "<h2>-Our Offerings</h2><p>Special facilities for pre booking groups.<br>-Managable cost for 3+ days stay<br>-On demand arrangement of vaishnav food<br>-On demand arrangements of taxi and Other facilities.</p>";
   } else if (section === "why") {
     content.innerHTML = `
       <div class="why-section" style="display: flex; justify-content: space-around; padding: 30px; background: #fff;">
